@@ -1,0 +1,22 @@
+{
+  "name": "info3d",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "next": "^13.4.12",
+    "nextra": "2.13.4",
+    "nextra-theme-docs": "2.13.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  }
+}
