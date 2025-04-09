@@ -7,5 +7,7 @@ const withNextra = nextra({
 })
 
 export default withNextra({
+  basePath: '/info3d',  // Add this line to specify the base path for GitHub Pages
+  trailingSlash: true,
   images: { unoptimized: true }
 })
