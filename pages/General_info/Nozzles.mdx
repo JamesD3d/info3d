@@ -1,0 +1,35 @@
+## Nozzle and Layer Height Guide
+Model printing times are most affected by a cobonation of layer heright and nozzle size. 
+- The majority of 3d printers will come standard with a 0.4 mm nozzle made of brass. A good middle ground between qualty and time is 0.2 mm layer heights. 
+
+import { Callout } from 'nextra/components'
+<Callout type="info">
+# Recomended - 
+| Nozzle Size | Layer Height |
+| 0.4 mm       | 0.2 mm      |
+
+</Callout>
+
+
+| Nozzle Size | Min Layer Height | 25×25×25 mm Cube Time  | Max Layer Height | 25×25×25 mm Cube Time  | Recommended Line Width | Max Line Width (+120%) |
+|-------------|------------------|------------------------|------------------|------------------------|------------------------|------------------------|
+| 0.4 mm      | 0.08 mm          | ~47 min                | 0.28 mm          | ~9 min                 | 0.45 mm                | 0.6 mm                 |
+| 0.6 mm      | 0.18 mm          | ~12 min                | 0.42 mm          | ~6.5 min               | 0.62 mm                | 0.8 mm                 |
+| 0.8 mm      | 0.24 mm          | ~9 min                 | 0.56 mm          | ~7 min                 | 0.82 mm                | 1.0 mm                 |
+| 0.2 mm      | 0.06 mm          | ~90 min                | 0.14 mm          | ~45 min                | 0.22 mm                | 0.3 mm                 |
+
+
+## Nozzle Materal 
+
+| Materal        | Materal Usage | Cost   | Notes                            | Other Considerations                     |
+|----------------|---------------|--------|----------------------------------|------------------------------------------|
+| Brass          | Non abrasive  | $      | Standard on most printers        | Replace often when print quality is lost | 
+| Steal          | Abrasive      | $$     | More abrasion resistance         | May require slightly higher temperature  |
+| Hardened Steal | Abrasive      | $$$    | Recomended for abrasive materals | May require slightly higher temperature  |
+| Dimond Back    | Abrasive      | $$$$$$ | Will last forever                | May require slightly higher temperature  |
+
+| Types        |Notes                                        |
+|--------------|---------------------------------------------|
+| Mk4 / 8      | Seen on older printers, not as common today |
+| Bondtech CHT | High flow Mk4 / 8                           |
+| All in one   | Vendor specific has all hotend components   |
