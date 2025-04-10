@@ -13,32 +13,27 @@ import { Callout } from 'nextra/components'
 
 ## Hotend Components Defined 
 
-- Nozzle - Responsible for Extruding molten Plastic onto a heated surface.
+### Nozzle - Responsible for Extruding molten Plastic onto a heated surface.
 
 
-- Heater - Usually a dc carterage with a heating element 
+### Heater - Usually a dc carterage with a heating element 
 
-- Thermistor - Repots the surent temperature to the controller. Ensures that the nozzle is hearing as expected. 
+### Thermistor - Repots the surent temperature to the controller. Ensures that the nozzle is hearing as expected. 
 
 <Callout type="warning">
 The thermister is the most important safity feature of an FFF 3d printer. All modern 3d printers have thermal runnaway protections that will alert and shut down the printer. Thermal runaway occurs when a Nozzle continues to recieve power with out raising the temperature as expected. 
 
 </Callout>
 
-- Heatbreak - The heatbreak is the part of the nozzle where filment moves from a solid to molten plaztic.
-> note: This is where the majority of extrusion issues occure. If the filment is heated too far past its transition point it can melt too far up the heatbreat resulting in a "Jam".  
+### Heatbreak - The heatbreak is the part of the nozzle where filment moves from a solid to molten plaztic.
+    > note: This is where the majority of extrusion issues occure. If the filment is heated too far past its transition point it can melt too far up the heatbreat resulting in a "Jam".  
 
-- Heat break versions
---Boaden Lined - PTFE tube meets directly with the nozzle
-    >note: PTFE tubes in this configuration wil break down over time and need to be replaced. 
---Metal / bi meatl - The PTFE constraines the filiment path and terminates in a metal heatbreak that meets the nozzle. 
+### Heatsyc - An aluminum block meant to disperse heat and keep the filiment solid until it reaches the melt zone
 
-- Heatsyc - The heatsync is an aluminum block meant to disopate heat an keep the filiment solid until it reaches the melt zone
-
-- Hotend cooling fan - Normally attached to the heatsync, removes heat before the "melt zone"
+### Hotend cooling fan - Normally attached to the heatsync, removes heat before the "melt zone"
     >note: This is very important to the extrusion system, it this fan stops or is obstructed the hotend will jam. 
 
-- Part Cooling Fan - This component transitions the molten plastic from a molten state to a solid state
+### Part Cooling Fan - This component transitions the molten plastic from a molten state to a solid state
     >note: Some materals require 100% fan and others may warp. Some may even suffer poor layer adheasion. Fan speed is materal specific. 
 
 ## Motion Systems Defined
