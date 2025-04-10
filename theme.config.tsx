@@ -1,5 +1,5 @@
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import './styles.css';  
+import '../styles.css';  
 const config: DocsThemeConfig = {
   logo: <span>info3d</span>,
   project: {
