@@ -1,3 +1,7 @@
+import { Callout } from 'nextra/components'
+import CollapsibleContent from '../../components/Collapsible'
+
+
 #  General Hardware & Explination
 
 ## General Parts 
@@ -7,14 +11,14 @@
 - Build Plate
 
 ## Hotend Components 
-
-- Nozzle - Responsible for Extruding molten Plastic onto a heated surface
+<CollapsibleContent title="Nozzle">
+- Responsible for Extruding molten Plastic onto a heated surface.
+</CollapsibleContent>
 
 - Heater - Usually a dc carterage with a heating element 
 
 - Thermistor - Repots the surent temperature to the controller. Ensures that the nozzle is hearing as expected. 
 
-import { Callout } from 'nextra/components'
 <Callout type="warning">
 The thermister is the most important safity feature of an FFF 3d printer. All modern 3d printer has thermal runnaway protections that will alert and shut down the printer. Thermal runaway occurs when a Nozzle continues to recieve power with out raising the temperature as expected. 
 
