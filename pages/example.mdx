@@ -1,0 +1,35 @@
+import { Callout } from 'nextra/components'
+import { HoverImage } from '../components/HoverImage'
+
+#  Hardware Definitions
+
+## Component Breakdown  
+- Hotend 
+- Motion System
+- Extrusion System
+- Heated Bed 
+- Other Components
+
+## Hotend Components Defined 
+
+### <HoverImage text="Nozzle" imageSrc="/images/nozzle.jpg" alt="3D printer nozzle" width={250} height={200} /> - Responsible for Extruding molten Plastic onto a heated surface.
+
+
+### <HoverImage text="Heater" imageSrc="/images/heater.jpg" alt="3D printer heater cartridge" width={250} height={200} /> - Usually a DC cartridge with a heating element 
+
+### <HoverImage text="Thermistor" imageSrc="/images/thermistor.jpg" alt="3D printer thermistor" width={250} height={200} /> - Reports the current temperature to the controller. Ensures that the nozzle is heating as expected. 
+
+<Callout type="warning">
+The thermistor is the most important safety feature of an FFF 3D printer. All modern 3D printers have thermal runaway protections that will alert and shut down the printer. Thermal runaway occurs when a Nozzle continues to receive power without raising the temperature as expected. 
+</Callout>
+
+### <HoverImage text="Heatbreak" imageSrc="/images/heatbreak.jpg" alt="3D printer heatbreak" width={250} height={200} /> - The heatbreak is the part of the nozzle where filament moves from a solid to molten plastic.
+    > note: This is where the majority of extrusion issues occur. If the filament is heated too far past its transition point it can melt too far up the heatbreak resulting in a "Jam".  
+
+### <HoverImage text="Heatsink" imageSrc="/images/heatsink.jpg" alt="3D printer heatsink" width={250} height={200} /> - An aluminum block meant to disperse heat and keep the filament solid until it reaches the melt zone
+
+### <HoverImage text="Hotend cooling fan" imageSrc="/images/hotend-fan.jpg" alt="3D printer hotend cooling fan" width={250} height={200} /> - Normally attached to the heatsink, removes heat before the "melt zone"
+    >note: This is very important to the extrusion system, if this fan stops or is obstructed the hotend will jam. 
+
+### <HoverImage text="Part Cooling Fan" imageSrc="/images/part-fan.jpg" alt="3D printer part cooling fan" width={250} height={200} /> - This component transitions the molten plastic from a molten state to a solid state
+    >note: Some materials require 100% fan and others may warp. Some may even suffer poor layer adhesion. Fan speed is material specific.
