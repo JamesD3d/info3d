@@ -1,16 +1,52 @@
+// styles/custom.css
+/* Custom highlight color - using orange to match your theme-color */
 :root {
-  --nextra-nav-hover-bg: #fde68a;
+  --nextra-primary-hue: 30; /* Orange (30) to match your theme-color #fb923c */
+  --nextra-primary-saturation: 90%;
+  --nextra-primary-brightness: 65%;
 }
 
-.Collapsible__trigger {
-  background-color: #f0f0f0;
-  padding: 10px;
-  font-size: 16px;
+/* For hover images - container and hiding by default */
+.hover-image-container {
+  position: relative;
+  display: inline-block;
   cursor: pointer;
+  color: hsl(var(--nextra-primary-hue), var(--nextra-primary-saturation), var(--nextra-primary-brightness));
+  font-weight: 500;
 }
 
-.Collapsible__content {
-  padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
+.hover-image {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  top: 0;
+  left: 100%; /* Show to the right */
+  margin-left: 12px; /* Optional spacing */
+  max-width: 300px;
+  padding: 4px;
+  background-color: white;
+}
+
+
+
+
+
+.hover-image-container:hover .hover-image {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Optional: Add a subtle indicator that there's hidden content */
+.hover-image-container.no-icon::after {
+  content: none;
+}
+
+/* Make nextra callouts match the theme color */
+.nextra-callout {
+  border-left-color: hsl(var(--nextra-primary-hue), var(--nextra-primary-saturation), var(--nextra-primary-brightness)) !important;
 }
