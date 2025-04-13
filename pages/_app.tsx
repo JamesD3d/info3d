@@ -1,4 +1,5 @@
 import '../styles.css'
+import '../styles/custom.css' // Import the custom CSS file for hover images and highlight colors
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react'
 import Head from 'next/head'
