@@ -1,3 +1,74 @@
-# Introduction
+import { Callout } from 'nextra/components'
 
-Get started with your info3d wiki.
+
+
+#  Hardware Definitions
+
+## Component Breakdown  
+- Hotend 
+- Motion System
+- Extrusion System
+- Heated Bed 
+- Other Components
+
+## Hotend Components Defined 
+
+### Nozzle - Responsible for Extruding molten Plastic onto a heated surface.
+
+
+### Heater - Usually a DC cartridge with a heating element 
+
+### Thermistor - Reports the current temperature to the controller. Ensures that the nozzle is heating as expected. 
+
+<Callout type="warning">
+The thermistor is the most important safety feature of an FFF 3D printer. All modern 3D printers have thermal runaway protections that will alert and shut down the printer. Thermal runaway occurs when a Nozzle continues to receive power without raising the temperature as expected. 
+
+</Callout>
+
+### Heatbreak - The heatbreak is the part of the nozzle where filament moves from a solid to molten plastic.
+    > note: This is where the majority of extrusion issues occur. If the filament is heated too far past its transition point it can melt too far up the heatbreak resulting in a "Jam".  
+
+### Heatsink - An aluminum block meant to disperse heat and keep the filament solid until it reaches the melt zone
+
+### Hotend cooling fan - Normally attached to the heatsink, removes heat before the "melt zone"
+    >note: This is very important to the extrusion system, if this fan stops or is obstructed the hotend will jam. 
+
+### Part Cooling Fan - This component transitions the molten plastic from a molten state to a solid state
+    >note: Some materials require 100% fan and others may warp. Some may even suffer poor layer adhesion. Fan speed is material specific. 
+
+## Motion Systems Defined
+
+### Most Common
+- Cartesian  - 1 motor per axis X,Y,Z
+- CoreXY - X and Y belts both attached to the Hotend. Motion is derived from a combination
+
+### Less Common 
+- Delta - 3 motors move together for one X,Y,Z movement
+- Hybrid CoreXY - 2 X axis Motors in a Core XY Configuration, Dependent dual Y axis motors. 
+- IDEX - 2 Independent Tool heads with a common Y axis but independent X axis
+
+## Extrusion Types Defined
+ 
+### Most Common 
+- Bowden Extrusion - Remote Filament Extruder that Feeds filament into the hotend but is not attached to the X gantry itself. 
+- Direct Drive - The Filament Extruder is Directly Attached to the Hotend Assembly. 
+
+### Less Common
+ - IDEX - 2 separate independent hotends.
+ - Tool Changer - One motion system that can dock and select multiple hotends
+ - Multiplexing - 2 complete hotends on a single Tool
+
+## Heat Beds and Build Plates. 
+- Heat Pads - Typically DC heaters placed on the underside of an aluminum Plate
+- Bed Leveling Screws - Adjust the tramming of the Bed
+- Heatbed Thermistor - Like the hotend the heated bed thermistor ensures the bed is heating properly. 
+
+## Build Plate Materials 
+- Glass
+- PEI 
+- Garolite
+
+## Other
+
+### Auto Bed Leveling Sensors
+-
