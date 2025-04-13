@@ -1,14 +1,18 @@
 // styles/custom.css
-/* Custom highlight color */
+/* Custom highlight color - using orange to match your theme-color */
 :root {
-  --nextra-primary-hue: 230; /* Change this value to adjust the highlight color */
-  --nextra-primary-saturation: 100%; /* Adjust saturation as needed */
+  --nextra-primary-hue: 30; /* Orange (30) to match your theme-color #fb923c */
+  --nextra-primary-saturation: 90%;
+  --nextra-primary-brightness: 65%;
 }
 
 /* For hover images - container and hiding by default */
 .hover-image-container {
   position: relative;
   display: inline-block;
+  cursor: pointer;
+  color: hsl(var(--nextra-primary-hue), var(--nextra-primary-saturation), var(--nextra-primary-brightness));
+  font-weight: 500;
 }
 
 .hover-image {
@@ -23,6 +27,8 @@
   top: 100%;
   left: 0;
   max-width: 300px; /* Adjust as needed */
+  padding: 4px;
+  background-color: white;
 }
 
 .hover-image-container:hover .hover-image {
@@ -30,25 +36,16 @@
   visibility: visible;
 }
 
-/* Custom component to use in your MDX */
-import React from 'react';
+/* Optional: Add a subtle indicator that there's hidden content */
+.hover-image-container::after {
+  content: "👁️";
+  font-size: 0.7em;
+  vertical-align: super;
+  opacity: 0.5;
+  margin-left: 2px;
+}
 
-export const HoverImage = ({ text, imageSrc, alt, width = 300, height = 'auto' }) => {
-  return (
-    <span className="hover-image-container">
-      {text}
-      <img 
-        className="hover-image" 
-        src={imageSrc} 
-        alt={alt || "Hover image"} 
-        style={{ 
-          width: typeof width === 'number' ? `${width}px` : width,
-          height: typeof height === 'number' ? `${height}px` : height
-        }} 
-      />
-    </span>
-  );
-};
-
-// Usage example in your MDX files:
-// <HoverImage text="Hover over me to see the nozzle" imageSrc="/images/nozzle.jpg" alt="3D printer nozzle" width={250} />
+/* Make nextra callouts match the theme color */
+.nextra-callout {
+  border-left-color: hsl(var(--nextra-primary-hue), var(--nextra-primary-saturation), var(--nextra-primary-brightness)) !important;
+}
