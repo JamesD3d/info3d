@@ -1,47 +1,4 @@
 {
   "index": "Introduction",
 
-  "-- 3d_Education": {
-    "type": "separator",
-    "title": "3D Education"
-  },
-  "3d_printing_in_the_classroom": "3D Printing in the Classroom",
-  "Lesson_Plans/Intoduction_to_3d_Printing": "Introduction to 3D Printing",
-  "Lesson_Plans/Introduction_to_3d_design": "Introduction to 3D Design",
-
-  "-- Hardware": {
-    "type": "separator",
-    "title": "Hardware"
-  },
-  "Calabration_&_Maintanance": "Calibration & Maintenance",
-  "Control_Software": "Control Software",
-  "Mechanical": "Mechanical",
-  "Printers": "Printers",
-  "Troubleshooting": "Troubleshooting",
-
-  "-- Materals": {
-    "type": "separator",
-    "title": "Materials"
-  },
-  "Manufaturers_Supplyers": "Manufacturers & Suppliers",
-  "Materals_Overview": "Materials Overview",
-  "Recomendec_Settings": "Recommended Settings",
-
-  "-- Model_Repositories": {
-    "type": "separator",
-    "title": "Model Repositories"
-  },
-  "3d_Files_Sources": "3D Files Sources",
-  "Repositories": "Repositories",
-
-  "-- Software": {
-    "type": "separator",
-    "title": "Software"
-  },
-  "3d_SCULPTING": "3D Sculpting",
-  "Blender": "Blender",
-  "Other_Useful": "Other Useful",
-  "Overview_File_Types": "Overview of File Types",
-  "Parametric_CAD": "Parametric CAD",
-  "Print_Preperation": "Print Preparation"
 }
