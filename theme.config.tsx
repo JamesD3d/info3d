@@ -4,6 +4,9 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/yourusername/info3d'
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1, // here
+  },
   docsRepositoryBase: 'https://github.com/yourusername/info3d/blob/main',
   footer: {
     text: '© 2025 info3d'
