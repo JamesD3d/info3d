@@ -39,7 +39,7 @@
     "3d_Files_Sources": "Other 3D Files Sources",
 
     "--3d_Education":{
-    "type":"seperator",
+    "type":"separator",
     "title":"3d Education"
     },
     "Lesson_Plans":"Lesson plans",
