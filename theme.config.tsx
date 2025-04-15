@@ -10,6 +10,11 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: 'https://github.com/yourusername/info3d/blob/main',
   footer: {
     text: '© 2025 info3d'
+  },
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – info 3D'
+    }
   }
 }
 
