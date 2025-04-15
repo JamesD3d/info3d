@@ -47,7 +47,8 @@
     },
     "Lesson_Plans":"Lesson plans",
     "3d_classroom":"3d Printing in the Classrrom",
-    "Teachers":"Teacher Resources",
+    "Teacher":"Teacher Resources",
+    "Subject_models": "Subject Specific Models",
     
     "--Advanced_Tips":{
       "type": "separator",
