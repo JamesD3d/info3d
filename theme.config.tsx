@@ -5,7 +5,7 @@ const config: DocsThemeConfig = {
     link: 'https://github.com/yourusername/info3d'
   },
   sidebar: {
-    defaultMenuCollapseLevel: 2, // here
+    defaultMenuCollapseLevel: 1, // here
   },
   docsRepositoryBase: 'https://github.com/yourusername/info3d/blob/main',
   footer: {
