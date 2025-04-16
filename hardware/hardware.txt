@@ -14,3 +14,8 @@ Heater pad
 Glass
 Pei
 Garalite. 
+
+bltouch
+pinda ouch
+limetswitch
+
