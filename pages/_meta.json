@@ -24,11 +24,11 @@
       "type": "separator",
       "title": "Software"
     },
+    "Print_Preperation": "Print Preperation",
     "Modeling_for_Printing":"Model to Print",
     "TINKER_CAD":"Tinker CAD",
     "Slicer":"Advanced Slicer Features",
     "Overview_File_Types": "File Types",
-    "Print_Preperation": "Slicers",
     "Parametric_CAD": "Parametric CAD",
     "3d_SCULPTING": "3D Sculpting",
     "Blender": "Blender",
