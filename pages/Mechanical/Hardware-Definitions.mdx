@@ -13,30 +13,38 @@ import { Callout } from 'nextra/components'
 
 ## Hotend Components Defined 
 
-### Nozzle - Responsible for Extruding molten Plastic onto a heated surface.
+### Nozzle 
+    - Responsible for Extruding molten Plastic onto a heated surface.
 
 
-### Heater - Usually a DC cartridge with a heating element 
+### Heater 
+    - Usually a DC cartridge with a heating element 
 
-### Thermistor - Reports the current temperature to the controller. Ensures that the nozzle is heating as expected. 
+### Thermistor 
+    - Reports the current temperature to the controller. Ensures that the nozzle is heating as expected. 
 
 <Callout type="warning">
 The thermistor is the most important safety feature of an FFF 3D printer. All modern 3D printers have thermal runaway protections that will alert and shut down the printer. Thermal runaway occurs when a Nozzle continues to receive power without raising the temperature as expected. 
 
 </Callout>
 
-### Heatbreak - The heatbreak is the part of the nozzle where filament moves from a solid to molten plastic.
+### Heatbreak
+    - The heatbreak is the part of the nozzle where filament moves from a solid to molten plastic.
     > note: This is where the majority of extrusion issues occur. If the filament is heated too far past its transition point it can melt too far up the heatbreak resulting in a "Jam".  
 
-### Heatsink - An aluminum block meant to disperse heat and keep the filament solid until it reaches the melt zone
+### Heatsink
+    - An aluminum block meant to disperse heat and keep the filament solid until it reaches the melt zone
 
-### Hotend cooling fan - Normally attached to the heatsink, removes heat before the "melt zone"
+### Hotend cooling fan 
+    - Normally attached to the heatsink, removes heat before the "melt zone"
     >note: This is very important to the extrusion system, if this fan stops or is obstructed the hotend will jam. 
 
-### Part Cooling Fan - This component transitions the molten plastic from a molten state to a solid state
+### Part Cooling Fan 
+    - This component transitions the molten plastic from a molten state to a solid state
     >note: Some materials require 100% fan and others may warp. Some may even suffer poor layer adhesion. Fan speed is material specific. 
 
-### All-One-Hotend - All in one hotends have become a populare optins with manufactures. The come pre-asembled and are meant to be changed as a set of components 
+### All-One-Hotend 
+    - All in one hotends have become a populare optins with manufactures. The come pre-asembled and are meant to be changed as a set of components 
 
 ## Motion Systems Defined
 
@@ -52,23 +60,34 @@ The thermistor is the most important safety feature of an FFF 3D printer. All mo
 ## Extrusion Systems Defined
  
 ### Most Common 
-- Bowden Extrusion - Remote Filament Extruder that Feeds filament into the hotend but is not attached to the X gantry itself. 
-- Direct Drive - The Filament Extruder is Directly Attached to the Hotend Assembly. 
+- Bowden Extrusion 
+    - Remote Filament Extruder that Feeds filament into the hotend but is not attached to the X gantry itself. 
+- Direct Drive 
+    - The Filament Extruder is Directly Attached to the Hotend Assembly. 
 
 ### Less Common
- - IDEX - 2 separate independent hotends.
- - Tool Changer - One motion system that can dock and select multiple hotends
- - Multiplexing - 2 complete hotends on a single Tool
+ - IDEX 
+    - 2 separate independent hotends.
+ - Tool Changer 
+    - One motion system that can dock and select multiple hotends
+ - Multiplexing 
+    - 2 complete hotends on a single Tool
 
 ## Heated Build Plates 
-- Silicon Heater Pads - Typically DC heaters placed on the underside of an aluminum Plate
-- Bed Leveling Screws - Adjust the tramming of the Bed
-- Heatbed Thermistor - Like the hotend the heated bed thermistor ensures the bed is heating properly. 
+- Silicon Heater Pads 
+    - Typically DC heaters placed on the underside of an aluminum Plate
+- Bed Leveling Screws 
+    - Adjust the tramming of the Bed
+- Heatbed Thermistor
+    - Like the hotend the heated bed thermistor ensures the bed is heating properly. 
 
 ## Build Plate Materials 
-- Glass - Tempers Glass often with a testrue applied
-- PEI - Smooth and testrue surface coating on a spring steal sheet
-- Garolite / G10 - Carbon fiber based surface 
+- Glass
+    - Tempers Glass often with a testrue applied
+- PEI 
+    - Smooth and testrue surface coating on a spring steal sheet
+- Garolite / G10 
+    - Carbon fiber based surface 
 
 ## Other Components
 ### Auto Bed Leveling Sensor Types
