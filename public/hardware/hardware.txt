@@ -1,1 +1,16 @@
 hardware
+
+Nozzle
+heater
+thermistor
+heatbreak
+heatsync
+
+boaden extruder
+direct etruder
+
+Heater pad
+
+Glass
+Pei
+Garalite. 
