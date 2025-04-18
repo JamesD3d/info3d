@@ -24,15 +24,15 @@
       "type": "separator",
       "title": "Software"
     },
+    "Overview_File_Types": "File Types",
     "Print_Preperation": "Print Preperation",
     "Modeling_for_Printing":"Model to Print",
     "TINKER_CAD":"Tinker CAD",
     "Slicer":"Advanced Slicer Features",
-    "Overview_File_Types": "File Types",
-    "Parametric_CAD": "Parametric CAD",
+    "Parametric_CAD": "CAD: Computer Aided Design",
     "3d_SCULPTING": "3D Sculpting",
     "Blender": "Blender",
-    "Other_Useful": "Other Useful",
+    "Other_Useful": "Other Tools",
     
     "-- Downloadable_Models": {
       "type": "separator",
