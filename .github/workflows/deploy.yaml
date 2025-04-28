@@ -21,6 +21,18 @@ jobs:
       - name: Install dependencies
         run: npm install  # Install the dependencies
 
+      # Add image optimization before building
+      - name: Optimize images
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: Customize compression settings
+          # jpegQuality: 80
+          # pngQuality: 80
+          # webpQuality: 80
+          # Preserve GIF animations
+          gifski: false
+
       - name: Build and export site
         run: |
           npm run build
