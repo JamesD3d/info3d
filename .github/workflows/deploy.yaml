@@ -4,50 +4,14 @@ on:
   push:
     branches:
       - main  # Trigger this workflow when changes are pushed to the main branch
-    paths:
-      - '**.jpg'
-      - '**.jpeg'
-      - '**.png'
-      - '**.gif'
-      - '**.webp'
 
 jobs:
-  optimize-images:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Compress Images
-        id: compress-images
-        uses: calibreapp/image-actions@main
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          compressOnly: true  # This ensures images are compressed but not committed back to PR
-          # Optional compression settings
-          jpegQuality: 80
-          pngQuality: 80
-          webpQuality: 80
-          # Ensure GIF animations are preserved
-          gifski: false
-
-      - name: Commit compressed images
-        if: steps.compress-images.outputs.markdown != ''
-        run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .
-          git commit -m "Optimize images [skip ci]"
-          git push
-
   deploy:
-    needs: optimize-images
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  # This will get the latest code with optimized images
+        uses: actions/checkout@v4  # Checkout the repository
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
