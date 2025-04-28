@@ -1,0 +1,32 @@
+# 
+
+import { Chart } from '@components/Chart'
+
+# Parametric CAD Tools Free for Educational Use
+
+This guide lists parametric CAD software available free to students and teachers, with key access details.
+
+| Program                   | Education Free                | Access Type                                                     | Paid Upgrade | Platform(s)                    | Standout Features                                                                            |  |
+|---------------------------|-------------------------------|-----------------------------------------------------------------|--------------|--------------------------------|-------------------------------------------------------------------------------------------------|
+| AutoCAD (Autodesk)        | ✅                           | Full (educational watermark on output)                          | ✅           | Windows, Mac                   | Industry-standard 2D CAD with basic 3D support.                                                 |
+| Creo (PTC)                | ✅                           | Limited (Student Edition; watermarks, file format restrictions) | ✅           | Windows                        | High-end mechanical design and simulation tools.                                                |
+| DesignSpark Mechanical    | ✅                           | Limited (direct modeling, no parametric history tree)           | ✅           | Windows                        | Lightweight mechanical CAD; easy learning curve.                                                |
+| FreeCAD                   | ✅                           | Full (open-source, unrestricted)                                | ❌           | Windows, Mac, Linux            | Fully open-source modular parametric CAD.                                                       |
+| Fusion 360 (Autodesk)     | ✅                           | Limited (minor export and collaboration restrictions)           | ✅           | Windows, Mac (cloud-connected) | Unified CAD/CAM/CAE; excellent for prototyping and manufacturing.                               |
+| Onshape (PTC)             | ✅                           | Full (education plan; private file storage for EDU accounts)    | ✅           | Browser (cross-platform)       | Cloud-native full parametric CAD; real-time collaboration.                                      |
+| SolveSpace                | ✅                           | Full (open-source, unrestricted)                                | ❌           | Windows, Mac, Linux            | Extremely lightweight constraint-based modeling.                                                |
+| SolidWorks (Dassault)     | ✅ (requires school license) | Full (Student Engineering Kit; educational watermark)           | ✅           | Windows                        | Industry standard for mechanical engineering; strong assemblies, surfacing, simulation support. |
+
+---
+
+# CAD Software Industry Usage (2025)
+
+<Chart
+  title="CAD Software Industry Usage (2025)"
+  type="pie"
+  labels={["SolidWorks", "AutoCAD", "Fusion 360", "Creo", "Onshape", "FreeCAD", "SolveSpace", "DesignSpark Mechanical"]}
+  values={[35, 25, 10, 8, 5, 3, 1, 1]}
+/>
+
+SolidWorks dominates mechanical CAD markets, followed by AutoCAD and the fast-growing Fusion 360. Open-source tools like FreeCAD and SolveSpace are increasingly important in education and hobbyist spaces.
+-
