@@ -26,24 +26,22 @@
     },
     "Overview_File_Types": "File Types",
     "Print_Preperation": "Print Preperation",
-    "Modeling_for_Printing":"Model to Print",
-    "TINKER_CAD":"Tinker CAD",
-    "Slicer":"Advanced Slicer Features",
-    "Parametric_CAD": "CAD: Computer Aided Design",
+    "Modeling_for_Printing":"3D Modeling to 3D Print",
+    "3d_Modeling": "3D Modeling Software",
     
-    "Blender": "Blender",
+   
     "Other_Useful": "Other Tools",
     
     "-- Downloadable_Models": {
       "type": "separator",
-      "title": "Model Repositories"
+      "title": "3D Model Repositories"
     },
     "Repositories": "3d Repositories",
     "3d_Files_Sources": "Other 3D Files Sources",
 
     "--3d_Education":{
     "type":"separator",
-    "title":"3d Education"
+    "title":"3d Education Resources"
     },
     "Lesson_Plans":"Lesson plans",
     "3d_classroom":"3d Printing in the Classrrom",
@@ -53,9 +51,10 @@
     "--Advanced_Tips":{
       "type": "separator",
       "title": "Advanced Tips & Tricks"
-    }
-    
-   
+    },
+    "Slicer":"Advanced Slicer Features",
+    "Postprocessing":"Postprocessing 3D Models",
+    "YouTube":"Informitive Youtube Resources"
   
   }
   
