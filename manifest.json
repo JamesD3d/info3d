@@ -1,7 +1,8 @@
 {
   "name": "info3d",
   "short_name": "info3d",
-  "start_url": "/info3d/",  
+  "start_url": "/info3d/",
+  "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#fb923c",
   "icons": [
