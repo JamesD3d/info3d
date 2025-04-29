@@ -1,5 +1,11 @@
-const CACHE_NAME = 'info3d-cache-v1';
-const urlsToCache = ['/', '/index.html'];
+const CACHE_NAME = 'info3d-cache-v2';
+const urlsToCache = [
+  '/info3d/',
+  '/info3d/index.html',
+  '/info3d/manifest.json',
+  '/info3d/fav_icon.png',
+  '/info3d/icon-512.png'
+];
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -7,8 +13,20 @@ self.addEventListener('install', event => {
   );
 });
 
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames =>
+      Promise.all(
+        cacheNames
+          .filter(name => name !== CACHE_NAME)
+          .map(name => caches.delete(name))
+      )
+    )
+  );
+});
+
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(response => response || fetch(event.request))
+    fetch(event.request).catch(() => caches.match('/info3d/index.html'))
   );
 });
