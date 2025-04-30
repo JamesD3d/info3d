@@ -7,12 +7,12 @@
   "theme_color": "#fb923c",
   "icons": [
     {
-      "src": "/info3d//pulic/fav_icon.png", 
+      "src": "/info3d/fav_icon.png", 
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/info3d/public/icon-512.png",
+      "src": "/info3d/fav_icon.png", 
       "sizes": "512x512",
       "type": "image/png"
     }
