@@ -1,8 +1,5 @@
-import { Callout } from 'nextra/components'
-
-
-
 #  Overview Hardware Definitions 
+import { Callout } from 'nextra/components'
 
 ## Components Quick Links  
 - [Hotend](#hotend) 
@@ -13,86 +10,143 @@ import { Callout } from 'nextra/components'
 
 ## Hotend Components Defined 
 
-### Nozzle 
-    - Responsible for Extruding molten Plastic onto a heated surface.
+<details>
+  <summary>Nozzle</summary>
+  - Responsible for Extruding molten Plastic onto a heated surface.
 
+  ![nozzle_webp]()
+</details>
 
-### Heater 
-    - Usually a DC cartridge with a heating element 
+<details>
+  <summary>Heater</summary>
+  - Usually a DC cartridge with a heating element
 
-### Thermistor 
-    - Reports the current temperature to the controller. Ensures that the nozzle is heating as expected. 
+  ![heater_webp]()
+</details>
+
+<details>
+  <summary>Thermistor</summary>
+  - Reports the current temperature to the controller. Ensures that the nozzle is heating as expected.
+
+  ![thermistor_webp]()
+</details>
 
 <Callout type="warning">
 The thermistor is the most important safety feature of an FFF 3D printer. All modern 3D printers have thermal runaway protections that will alert and shut down the printer. Thermal runaway occurs when a Nozzle continues to receive power without raising the temperature as expected. 
-
 </Callout>
 
-### Heatbreak
-    - The heatbreak is the part of the nozzle where filament moves from a solid to molten plastic.
-    >  This is where the majority of extrusion issues occur. If the filament is heated too far past its transition point it can melt too far up the heatbreak resulting in a "Jam".  
 
-### Heatsink
-    - An aluminum block meant to disperse heat and keep the filament solid until it reaches the melt zone
+<details>
+  <summary>Heatbreak</summary>
+  - The heatbreak is the part of the nozzle where filament moves from a solid to molten plastic.
+  >  This is where the majority of extrusion issues occur. If the filament is heated too far past its transition point it can melt too far up the heatbreak resulting in a "Jam".
 
-### Hotend cooling fan 
-    - Normally attached to the heatsink, removes heat before the "melt zone"
-    > This is very important to the extrusion system, if this fan stops or is obstructed the hotend will jam. 
+  ![heatbreak_webp]()
+</details>
 
-### Part Cooling Fan 
-    - This component transitions the molten plastic from a molten state to a solid state
-    > Some materials require 100% fan and others may warp. Some may even suffer poor layer adhesion. Fan speed is material specific. 
+<details>
+  <summary>Heatsink</summary>
+  - An aluminum block meant to disperse heat and keep the filament solid until it reaches the melt zone
 
-### All-One-Hotend 
-    - All in one hotends have become a populare optins with manufactures. The come pre-asembled and are meant to be changed as a set of components 
+  ![heatsink_webp]()
+</details>
+
+<details>
+  <summary>Hotend Cooling Fan</summary>
+  - Normally attached to the heatsink, removes heat before the "melt zone"
+  > This is very important to the extrusion system, if this fan stops or is obstructed the hotend will jam.
+
+  ![hotend_cooling_fan_webp]()
+</details>
+
+<details>
+  <summary>Part Cooling Fan</summary>
+  - This component transitions the molten plastic from a molten state to a solid state
+  > Some materials require 100% fan and others may warp. Some may even suffer poor layer adhesion. Fan speed is material specific.
+
+  ![part_cooling_fan_webp]()
+</details>
+
+<details>
+  <summary>All-In-One Hotend</summary>
+  - All in one hotends have become a popular option with manufacturers. They come pre-assembled and are meant to be changed as a set of components.
+
+  ![all_in_one_hotend_webp]()
+</details>
 
 ## Motion Systems Defined
 
-### Most Common
-- Cartesian  - 1 motor per axis X,Y,Z
-- CoreXY - X and Y belts both attached to the Hotend. Motion is derived from a combination
+<details>
+  <summary>Most Common</summary>
+  - Cartesian  - 1 motor per axis X,Y,Z  
+  - CoreXY - X and Y belts both attached to the Hotend. Motion is derived from a combination
 
-### Less Common 
-- Delta - 3 motors move together for one X,Y,Z movement
-- Hybrid CoreXY - 2 X axis Motors in a Core XY Configuration, Dependent dual Y axis motors. 
-- IDEX - 2 Independent Tool heads with a common Y axis but independent X axis
+  ![motion_common_webp]()
+</details>
+
+<details>
+  <summary>Less Common</summary>
+  - Delta - 3 motors move together for one X,Y,Z movement  
+  - Hybrid CoreXY - 2 X axis Motors in a Core XY Configuration, Dependent dual Y axis motors.  
+  - IDEX - 2 Independent Tool heads with a common Y axis but independent X axis
+
+  ![motion_less_common_webp]()
+</details>
 
 ## Extrusion Systems Defined
- 
-### Most Common 
-- Bowden Extrusion 
-    - Remote Filament Extruder that Feeds filament into the hotend but is not attached to the X gantry itself. 
-- Direct Drive 
-    - The Filament Extruder is Directly Attached to the Hotend Assembly. 
 
-### Less Common
- - IDEX 
-    - 2 separate independent hotends.
- - Tool Changer 
-    - One motion system that can dock and select multiple hotends
- - Multiplexing 
-    - 2 complete hotends on a single Tool
+<details>
+  <summary>Bowden Extrusion</summary>
+  - Remote Filament Extruder that Feeds filament into the hotend but is not attached to the X gantry itself.
 
-## Heated Build Plates 
-- Silicon Heater Pads 
-    - Typically DC heaters placed on the underside of an aluminum Plate
-- Bed Leveling Screws 
-    - Adjust the tramming of the Bed
-- Heatbed Thermistor
-    - Like the hotend the heated bed thermistor ensures the bed is heating properly. 
+  ![Bowden_webp]()
+</details>
 
-## Build Plate Materials 
-- Glass
-    - Tempers Glass often with a testrue applied
-- PEI 
-    - Smooth and testrue surface coating on a spring steal sheet
-- Garolite / G10 
-    - Carbon fiber based surface 
+<details>
+  <summary>Direct Drive</summary>
+  - The Filament Extruder is Directly Attached to the Hotend Assembly.
+
+  ![direct_drive_webp]()
+</details>
+
+<details>
+  <summary>Less Common Systems</summary>
+  - IDEX - 2 separate independent hotends.  
+  - Tool Changer - One motion system that can dock and select multiple hotends  
+  - Multiplexing - 2 complete hotends on a single Tool
+
+  ![extrusion_other_webp]()
+</details>
+
+## Heated Build Plates
+
+<details>
+  <summary>Heated Plate Types</summary>
+  - Silicon Heater Pads - Typically DC heaters placed on the underside of an aluminum Plate  
+  - Bed Leveling Screws - Adjust the tramming of the Bed  
+  - Heatbed Thermistor - Like the hotend the heated bed thermistor ensures the bed is heating properly.
+
+  ![heated_plate_webp]()
+</details>
+
+## Build Plate Materials
+
+<details>
+  <summary>Surface Materials</summary>
+  - Glass - Tempered Glass often with a texture applied  
+  - PEI - Smooth and textured surface coating on a spring steel sheet  
+  - Garolite / G10 - Carbon fiber based surface
+
+  ![plate_materials_webp]()
+</details>
 
 ## Other Components
-### Auto Bed Leveling Sensor Types
-- Inductive
-- Microswitch
-- Force / Piezzo Sensor
-- 
 
+<details>
+  <summary>Auto Bed Leveling Sensor Types</summary>
+  - Inductive  
+  - Microswitch  
+  - Force / Piezo Sensor
+
+  ![auto_bed_leveling_webp]()
+</details>
