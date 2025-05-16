@@ -1,0 +1,33 @@
+
+<Callout type="warning">
+The Hotend is the hottest part of the 3D Printer. Temperatures can reach 300° C or 572° F. Contact when active can lead to injury. 
+</Callout>
+ 
+<Callout type="info">
+All 3d Printed models only retain ~ 40% strength in the Z axis due to layer adheasion
+</Callout>
+
+ 
+<Callout>
+Helpful advice for doing things better or more easily.
+</Callout>
+
+
+<Callout type="info">
+  Useful information that users should know, even when skimming content.
+</Callout>
+
+
+<Callout type="warning">
+  Urgent info that needs immediate user attention to avoid problems.
+</Callout>
+
+
+<Callout type="error">
+  Advises about risks or negative outcomes of certain actions.
+</Callout>
+
+
+<Callout type="important">
+  Key information users need to know to achieve their goal.
+</Callout>
