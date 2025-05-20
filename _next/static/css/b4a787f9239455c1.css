@@ -1,0 +1,1 @@
+@tailwind base;@tailwind components;@tailwind utilities;@layer my-base{:root{--nextra-primary-hue:30;--nextra-primary-saturation:90%;--nextra-primary-brightness:75%}}:root{--nextra-primary-hue:30;--nextra-primary-saturation:90%;--nextra-primary-brightness:65%}
