@@ -1,4 +1,4 @@
-
+@import 'nextra-theme-docs/dist/style.css' layer(nextra);
   :root {
     --nextra-primary-hue: 30; /* Orange (30) to match your theme-color #fb923c */
     --nextra-primary-saturation: 90%;
