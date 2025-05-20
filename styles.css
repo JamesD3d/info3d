@@ -1,4 +1,3 @@
-// styles/custom.css
 @layer nextra, my-base;
 
 @import 'nextra-theme-docs/dist/style.css' layer(nextra);
