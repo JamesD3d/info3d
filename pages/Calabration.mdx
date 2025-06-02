@@ -1,54 +1,58 @@
-import { Cards } from 'nextra/components'
+<Tabs items={[
+  'General Maintenance',
+  'Handy Test Models',
+  'Material Calibration',
+  'PID Tuning',
+  'Printer Calibration',
+  'Tension Adjustments'
+]}>
 
-<Cards>
-  <Cards.Card
-    title="General Maintenance"
-    href="./General_Maintance.mdx"
-    description="Routine upkeep such as tightening screws, lubricating rods, and inspecting belts to ensure optimal performance."
-  />
-  <Cards.Card
-    title="Handy Test Models"
-    href="./Handy_Test_Models.mdx"
-    description="Popular calibration and test models for tuning your printer."
-  />
-  <Cards.Card
-    title="Material Calibration"
-    href="./Materal_Calabration.mdx"
-    description="Adjust flow rate, retraction, and temperature settings for different filament types to improve print consistency."
-  />
-  <Cards.Card
-    title="PID Tuning"
-    href="./PID_Tune.mdx"
-    description="Fine-tune temperature control for your printer’s hotend and heated bed using PID values to avoid overshooting."
-  />
-  <Cards.Card
-    title="Printer Calibration"
-    href="./Printer_Calabration.mdx"
-    description="Refine steps per mm and axis movement to ensure dimensional accuracy in your 3D prints."
-  />
-  <Cards.Card
-    title="Tension Adjustments"
-    href="./Tension_Adjustments.mdx"
-    description="Balance belt and roller tension to minimize print defects like ghosting and improve mechanical longevity."
-  />
-</Cards>
+<Tabs.Tab key="General Maintenance">
+<>
+[Read General Maintenance](./General_Maintance.mdx)
 
-## Autodesk FDM Test Model
+**Routine upkeep** such as tightening screws, lubricating rods, and inspecting belts to ensure optimal performance.
+</>
+</Tabs.Tab>
 
-[Autodesk_FDM_Test_Model.stl](https://github.com/JamesD3d/info3d/blob/253c6bed1749104d317baeef4e10b498352df2b7/public/models/Autodesk_test.stl)
+<Tabs.Tab key="Handy Test Models">
+<>
+[Read Handy Test Models](./Handy_Test_Models.mdx)
 
-![Autodesk FDM Test](/public/models/autdesktest.gif)
+**Popular calibration and test models** for tuning your printer.
+</>
+</Tabs.Tab>
 
-## 3D Benchy
+<Tabs.Tab key="Material Calibration">
+<>
+[Read Material Calibration](./Materal_Calabration.mdx)
 
-[The Classic Boat](https://github.com/JamesD3d/info3d/blob/253c6bed1749104d317baeef4e10b498352df2b7/public/models/3DBenchy.3mf)
+**Adjust flow rate, retraction, and temperature** settings for different filament types to improve print consistency.
+</>
+</Tabs.Tab>
 
-<picture>
- <img src="/models/benchy.png" alt="3D Benchy" loading="lazy" decoding="async" />
-</picture>
+<Tabs.Tab key="PID Tuning">
+<>
+[Read PID Tuning](./PID_Tune.mdx)
 
-## Voron Cube
+**Fine-tune temperature control** for your printer’s hotend and heated bed using PID values to avoid overshooting.
+</>
+</Tabs.Tab>
 
-[Voron Test Cube](https://github.com/JamesD3d/info3d/blob/253c6bed1749104d317baeef4e10b498352df2b7/public/models/Voron_Design_Cube_v7.3mf)
+<Tabs.Tab key="Printer Calibration">
+<>
+[Read Printer Calibration](./Printer_Calabration.mdx)
 
-![Voron Calibration Cube](/public/models/voroncube.png)
+**Refine steps per mm and axis movement** to ensure dimensional accuracy in your 3D prints.
+</>
+</Tabs.Tab>
+
+<Tabs.Tab key="Tension Adjustments">
+<>
+[Read Tension Adjustments](./Tension_Adjustments.mdx)
+
+**Balance belt and roller tension** to minimize print defects like ghosting and improve mechanical longevity.
+</>
+</Tabs.Tab>
+
+</Tabs>
