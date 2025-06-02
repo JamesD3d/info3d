@@ -1,0 +1,80 @@
+import { Tabs } from 'nextra/components'
+
+<Tabs items={[
+  'General Maintenance',
+  'Handy Test Models',
+  'Material Calibration',
+  'PID Tuning',
+  'Printer Calibration',
+  'Tension Adjustments'
+]}>
+
+<Tabs.Tab key="General Maintenance">
+<>
+[Read General Maintenance](./General_Maintance.mdx)
+
+**General Maintenance** covers routine tasks like checking belts, lubricating rails, and tightening screws to keep your printer in top condition.
+</>
+</Tabs.Tab>
+
+<Tabs.Tab key="Handy Test Models">
+<>
+[Read Handy Test Models](./Handy_Test_Models.mdx)
+
+## Autodesk FDM Test Model 
+
+[Autodesk_FDM_Test_Model.stl](https://github.com/JamesD3d/info3d/blob/253c6bed1749104d317baeef4e10b498352df2b7/public/models/Autodesk_test.stl)
+
+![Autodesk FDM Test](public/models/autdesktest.gif)
+
+## 3d Benchy
+[The Clasic Boat](https://github.com/JamesD3d/info3d/blob/253c6bed1749104d317baeef4e10b498352df2b7/public/models/3DBenchy.3mf)
+
+
+
+<picture>
+ <img src="/models/benchy.png" alt="3D Benchy" loading="lazy" decoding="async" />
+</picture>
+
+## Voron Cude
+[Voron Test Cube](https://github.com/JamesD3d/info3d/blob/253c6bed1749104d317baeef4e10b498352df2b7/public/models/Voron_Design_Cube_v7.3mf)
+
+![Voron Calibraiton Cube](public/models/voroncube.png)
+
+
+</>
+</Tabs.Tab>
+
+<Tabs.Tab key="Material Calibration">
+<>
+[Read Material Calibration](./Materal_Calabration.mdx)
+
+**Material Calibration** involves tuning flow rate, temperature, and retraction for different filament types to achieve consistent prints.
+</>
+</Tabs.Tab>
+
+<Tabs.Tab key="PID Tuning">
+<>
+[Read PID Tuning](./PID_Tune.mdx)
+
+**PID Tuning** ensures stable temperature control for your hotend and bed, improving print quality and reducing artifacts.
+</>
+</Tabs.Tab>
+
+<Tabs.Tab key="Printer Calibration">
+<>
+[Read Printer Calibration](./Printer_Calabration.mdx)
+
+**Printer Calibration** includes adjusting steps/mm, ensuring accurate movements, and refining axes to print to scale.
+</>
+</Tabs.Tab>
+
+<Tabs.Tab key="Tension Adjustments">
+<>
+[Read Tension Adjustments](./Tension_Adjustments.mdx)
+
+**Tension Adjustments** help reduce vibration, eliminate ringing, and prolong the life of belts and motion components.
+</>
+</Tabs.Tab>
+
+</Tabs>
