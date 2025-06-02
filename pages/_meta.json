@@ -30,7 +30,7 @@
     "3d_Modeling": "3D Modeling Software",
     
    
-    "Other_Useful": "Other Tools",
+    "Other_Tools": "Other useful Tools",
     
     "-- Downloadable_Models": {
       "type": "separator",
@@ -43,8 +43,8 @@
     "type":"separator",
     "title":"3d Education Resources"
     },
-    "Lesson_Plans":"Lesson plans",
-    "3d_classroom":"3d Printing in the Classrrom",
+    "Lesson_Plans":"Lesson Plans",
+    "3d_classroom":"3d Printing Classroom Strategies",
     "Teacher":"Teacher Resources",
     "Subject_models": "Subject Specific Models",
     
