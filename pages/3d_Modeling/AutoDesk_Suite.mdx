@@ -1,31 +1,40 @@
-# [AutoDesk Suit](https://www.autodesk.com/products)
-There are numerious productus under the AutoDest Suit of Design software here is a brief overview of some notible tools. Many of these tools have hobby and student free access. 
+import { Cards } from 'nextra/components'
+import { FusionIcon, AutoCADIcon, RevitIcon, MayaIcon, InventorIcon, MaxIcon, EduIcon } from '../path/with/your/icons'
 
-## [Fusion 360](https://www.autodesk.com/products/fusion-360/overview)
-
-- [Hobby licens](https://www.autodesk.com/products/fusion-360/personal): Maximum of 4 "Open" Projects
-- [Student / Teacher](https://www.autodesk.com/education/home#educators) Free Access
-- Online Access Required
-- Features:
-  - Parametric Design
-  - Design History
-  - 3d Slicing & CAM avaliable
-  - [Browser version avaliable](https://fusion.online.autodesk.com/) 
-        
-
-## [Auto CAD](https://www.autodesk.com/products/autocad/overview)
-
-## [Revit](https://www.autodesk.com/products/revit/overview)
-
-## [Maya](https://www.autodesk.com/products/maya/overview)
-
-## [Inventor](https://www.autodesk.com/products/inventor/overview) 
-
-## [3ds Max](https://www.autodesk.com/products/3ds-max/overview) 
-
-## [AutoDest EDU Software overview](https://www.autodesk.com/education/edu-software/overview)
-
-
-
-
-
+<Cards>
+  <Cards.Card
+    icon={<FusionIcon />}
+    title="Fusion 360"
+    href="https://www.autodesk.com/products/fusion-360/overview"
+/>
+  <Cards.Card
+    icon={<AutoCADIcon />}
+    title="AutoCAD"
+    href="https://www.autodesk.com/products/autocad/overview"
+/>
+  <Cards.Card
+    icon={<RevitIcon />}
+    title="Revit"
+    href="https://www.autodesk.com/products/revit/overview"
+/>
+  <Cards.Card
+    icon={<MayaIcon />}
+    title="Maya"
+    href="https://www.autodesk.com/products/maya/overview"
+/>
+  <Cards.Card
+    icon={<InventorIcon />}
+    title="Inventor"
+    href="https://www.autodesk.com/products/inventor/overview"
+/>
+  <Cards.Card
+    icon={<MaxIcon />}
+    title="3ds Max"
+    href="https://www.autodesk.com/products/3ds-max/overview"
+/>
+  <Cards.Card
+    icon={<EduIcon />}
+    title="Autodesk EDU Overview"
+    href="https://www.autodesk.com/education/edu-software/overview"
+/>
+</Cards>
