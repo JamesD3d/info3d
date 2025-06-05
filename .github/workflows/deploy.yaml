@@ -3,32 +3,57 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger this workflow when changes are pushed to the main branch
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4  # Checkout the repository
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: 20  # Use Node.js version 20
+          node-version: 18
 
       - name: Install dependencies
-        run: npm install  # Install the dependencies
+        run: npm ci
 
-      - name: Build and export site
-        run: |
-          npm run build
-          npm run export  # Export the site to static files
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4  # Action to deploy to GitHub Pages
+      - name: Cache Next.js build
+        uses: actions/cache@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Automatically access the GitHub repository
-          publish_dir: ./out  # Directory to push to gh-pages
-          publish_branch: gh-pages  # Push to gh-pages branch
+          path: .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-
+
+      - name: Build
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './out'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
