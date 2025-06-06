@@ -1,4 +1,7 @@
 import { Table } from 'nextra/components'
+import React from "react";
+import dynamic from 'next/dynamic'
+const IFrame = dynamic(() => import('../../components/IFrame'), { ssr: false })
 
 
 # Parametric CAD Tools Free for Educational Use
@@ -23,13 +26,12 @@ This guide lists parametric CAD software available free to students and teachers
 ## CAD Software Industry Usage (2025)
 
 <>
-<iframe
+<IFrame
   src="https://jamesd3d.github.io/info3dimages/cad_usage.html"
   width="640"
   height="450"
-  style="border: none; background: transparent;"
   title="CAD Software Industry Usage (2025)"
-></iframe>
+/>
 </>
 
 
