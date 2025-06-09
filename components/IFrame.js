@@ -1,15 +1,5 @@
-import React from "react";
+import dynamic from 'next/dynamic';
 
-export default function IFrame(props) {
-  return (
-    <iframe
-      src={props.src}
-      width={props.width}
-      height={props.height}
-      title={props.title}
-      style={{ border: "none", background: "transparent" }}
-      loading="lazy"
-      allowFullScreen
-    />
-  );
-}
+const IFrame = dynamic(() => import('./IFrameComponent'), { ssr: false });
+
+export default IFrame;

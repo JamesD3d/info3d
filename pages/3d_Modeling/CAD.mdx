@@ -1,8 +1,5 @@
-import { Table } from 'nextra/components'
-import React from "react";
-import dynamic from 'next/dynamic'
-const IFrame = dynamic(() => import('../../components/IFrame'), { ssr: false })
-
+import { Table } from 'nextra/components';
+import IFrame from '../../components/IFrame';
 
 # Parametric CAD Tools Free for Educational Use
 
@@ -21,19 +18,18 @@ This guide lists parametric CAD software available free to students and teachers
 
 ---
 
-
-
 ## CAD Software Industry Usage (2025)
 
-<>
 <IFrame
   src="https://jamesd3d.github.io/info3dimages/cad_usage.html"
   width="640"
   height="450"
   title="CAD Software Industry Usage (2025)"
 />
-</>
-
 
 ## SolidWorks dominates mechanical CAD markets, followed by AutoCAD and the fast-growing Fusion 360. Open-source tools like FreeCAD and SolveSpace are increasingly important in education and hobbyist spaces.
+
+- uses: actions/checkout@v3
+  with:
+    fetch-depth: 0
 
