@@ -9,6 +9,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "drift-zoom": "^1.5.1",
     "next": "^13.4.12",
     "nextra": "2.13.4",
     "nextra-theme-docs": "2.13.4",

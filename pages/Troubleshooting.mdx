@@ -1,0 +1,42 @@
+import { Tabs } from 'nextra/components'
+
+
+# Print Troubleshooting:
+
+
+
+<Tabs items={['Bed Adhesion', 'Extrusion Issues', 'Mechanical Issues', 'Quality Issues']}>
+
+<Tabs.Tab key="Bed Adhesion">
+<>
+import BedAdhesion from './Bed_Adheason.mdx'
+
+<BedAdhesion />
+</>
+</Tabs.Tab>
+
+<Tabs.Tab key="Extrusion Issues">
+<>
+import ExtrusionIssues from './Extrussion_issues.mdx'
+
+<ExtrusionIssues />
+</>
+</Tabs.Tab>
+
+<Tabs.Tab key="Mechanical Issues">
+<>
+import MechanicalIssues from './Mechanical_Issues.mdx'
+
+<MechanicalIssues />
+</>
+</Tabs.Tab>
+
+<Tabs.Tab key="Quality Issues">
+<>
+import QualityIssues from './Quality_Issues.mdx'
+
+<QualityIssues />
+</>
+</Tabs.Tab>
+
+</Tabs>
