@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Optional: Nextra theme styles */
+@import 'nextra-theme-docs/style.css';
+
+/* Keep your existing custom properties */
+:root {
+  --nextra-primary-hue: 30;
+  --nextra-primary-saturation: 90%;
+  --nextra-primary-brightness: 85%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nextra-primary-brightness: 80%;
+  }
+}

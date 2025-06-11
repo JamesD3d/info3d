@@ -1,5 +1,4 @@
-import '../styles.css'
-import '../styles/custom.css'
+import '../globals.css'
 import type { AppProps } from 'next/app'
 import { useEffect } from 'react'
 import Head from 'next/head'

@@ -1,8 +1,0 @@
-@layer my-base {
-  /* Custom highlight color - using orange to match your theme-color */
-  :root {
-    --nextra-primary-hue: 30; /* Orange (30) to match your theme-color #fb923c */
-    --nextra-primary-saturation: 90%;
-    --nextra-primary-brightness: 85%;
-  }
-}
