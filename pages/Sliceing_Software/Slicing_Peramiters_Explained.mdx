@@ -1,5 +1,4 @@
 import { Callout } from 'nextra/components'
-import { Steps } from 'nextra/components'
 
 # Slicing Parameters:
 
@@ -23,47 +22,47 @@ My personal recommendations using my preferred slicer Orca slicer
 
 ## Quality
 ---
-- [ ]  Layer height: 0.2mm
+ [ ]  Layer height: 0.2mm
 
-- [ ]  First Layer height 0.2mm
+ [ ]  First Layer height 0.2mm
 
 ### Line width
 ---
 - In most cases I update these to 0.6mm this is 120% of the nozzle size and can reduce printtime and increase strength. 
 
-- [ ] For detail and text I leave the default settings.
+ [ ] For detail and text I leave the default settings.
 
 ### Seam position
 ---
-- [ ] Aligned / Rear
+ [ ] Aligned / Rear
 
-- [ ] Scarf joint on all seams.
+ [ ] Scarf joint on all seams.
 
 ### Wall Generator
 ---
-- [ ] Arachne
+ [ ] Arachne
 
 ### Walls and surfaces 
 ---
-- [ ] Inner/Outer/Inner
+ [ ] Inner/Outer/Inner
 
-- [ ] Small area flow compensation(beta)
+ [ ] Small area flow compensation(beta)
 
 ### Bridging 
 ---
-- [ ] Thick external bridges
+ [ ] Thick external bridges
 
-- [ ] Thick internal bridges
+ [ ] Thick internal bridges
 
-- [ ] Extra bridge layers(beta)
+ [ ] Extra bridge layers(beta)
 
 Bridge counterbore holes
-- [ ] Sacrificial layer 
+ [ ] Sacrificial layer 
     > also helps with support removal.
 
 ### Overhangs
 ---
-- [ ] Extra perimeters on overhangs.
+ [ ] Extra perimeters on overhangs.
 
 
 ## Strength 
@@ -71,36 +70,36 @@ Bridge counterbore holes
 ### Wall Loops:
 ---  
 > I increase this for desired strength.
-- [ ] Wall Loops : 3
+ [ ] Wall Loops : 3
 
-- [ ] Alternate Extra Walls
+ [ ] Alternate Extra Walls
 
 
 ### Top/bottom shells
-- [ ] Top shelly layers: 5
+ [ ] Top shelly layers: 5
 
-- [ ] Top shell thickness: 0mm (
+ [ ] Top shell thickness: 0mm (
 > this dissables the thicknes limmet and uses he number of layers instead. 5 0.2mm layers = 1mm thick) 
 
-- [ ] Top surface pattern: Monotonic Line
+ [ ] Top surface pattern: Monotonic Line
 > Depending on the model and desired top surface finish. These can be interesting to play with. 
 
-- [ ] Bottom surface pattern: Monotonic Line
+ [ ] Bottom surface pattern: Monotonic Line
 
-- [ ] Bottom shell thickness: 0mm
+ [ ] Bottom shell thickness: 0mm
 > this dissables the thicknes limmet and uses he number of layers instead. 5 0.2mm layers = 1mm thick) 
 
-- [ ] Bottom surface pattern: Monotonic Line
+ [ ] Bottom surface pattern: Monotonic Line
 
 ### Infill 
 ---
-- [ ] Sparse infill density: 10%
+ [ ] Sparse infill density: 10%
 > again depending on desired strength. the majority of model strength is derived from the wall not the infill.
 
-- [ ] Sparse infill pattern: Gyroid
+ [ ] Sparse infill pattern: Gyroid
 > Personal: use for most models, light weight and quick models use adaptive cubic.
 
-- [ ] Infill combination
+ [ ] Infill combination
 
 
 ---
@@ -139,9 +138,9 @@ If you atempt to use PETG with PLA Supports, the PLA may [JAM](/Troubleshooting)
 - [ ]Brim type: Mouse ear (if needed)
 > this places small tabs on sections of a print that may lif due to internal tension. These are very easy to remove. 
 
-- [ ] Verbose Gcode
+ [ ] Verbose Gcode
 
-- [ ] Label objects
+ [ ] Label objects
 
-- [ ] Exclude objects
+ [ ] Exclude objects
 > if the printer supports the feature. During the print of multiplul models , this feature allows you to skip a model that failed and continue printing the other without loosing progress. 
