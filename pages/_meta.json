@@ -19,7 +19,7 @@
     },
     "Materals_Overview": "Materials Overview",
     "Manufaturers_Supplyers": "Manufacturers & Suppliers",
-    
+    "Recomended_Settings": "Recommended Settings",
     
     "-- Software": {
       "type": "separator",
@@ -42,19 +42,18 @@
     "type":"separator",
     "title":"3d Education Resources"
     },
-    "Lesson_Plans":"Lesson Plans",
+    
     "3d_classroom":"3d Printing Classroom Recommendations",
     "Teacher":"Teacher Resources",
-    "Subject_models": "Subject Specific Models",
     
-    "--Advanced_Tips":{
+    
+    "--Other":{
       "type": "separator",
-      "title": "Advanced Tips & Tricks"
+      "title": "Other Resources"
     },
-    "Slicer":"Advanced Slicer Features",
-    "Postprocessing":"Postprocessing 3D Models",
+    
+    "Postprocessing":"Postprocessing",
     "YouTube":"Informitive Youtube Resources"
   
   }
   
-
