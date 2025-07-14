@@ -1,33 +1,31 @@
-# Firmeware
+# Firmware
 
-3d printer use micontrolers to send individual movment commands to motors.
+3D printers use microcontrollers to send individual movement commands to motors.
 
+The resulting motion is movement in the X, Y, Z, and E (extrusion) axes.
 
-The resulting motion is a movment in the X Y Z and E (extrusion) axies 
-
-There are 3 main Firmwares that manage these commands
-> there are several maufacturer specefic such as Bambu but most function very semilar.All listed are opensource
+There are three main firmware packages that manage these commands.  
+> There are several manufacturer-specific options, such as Bambu, but most function very similarly. All listed are open source.
 
 ## [RepRap](https://configtool.reprapfirmware.org/)
-- ![ReoRap Firmware.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Printers/ReoRap%20Firmware.webp)
+- ![RepRap Firmware.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Printers/ReoRap%20Firmware.webp)
 
-- Primarialy uses Duet controlboards
-- All settings controlled via G-Code
-- Uses the RipRap configurator
-- Web Based Control Interface
+- Primarily uses Duet control boards
+- All settings controlled via G-code
+- Uses the RepRap configurator
+- Web-based control interface
 
 ## [Marlin](https://marlinfw.org/)
 - ![Marlin.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Printers/Marlin.webp)
 
-- Used on multipul boards
-- Uses VSCode and the Platform IO extension to build firmware based on config.h and configadv.h files
-- Has pre determined setting for most cotrollers and situations. [(Config Referances)](https://github.com/MarlinFirmware/Configurations/tree/import-2.1.x/config/examples)
-
+- Used on multiple boards
+- Uses VS Code and the PlatformIO extension to build firmware based on `config.h` and `configadv.h` files
+- Has predetermined settings for most controllers and situations. [(Config References)](https://github.com/MarlinFirmware/Configurations/tree/import-2.1.x/config/examples)
 
 ## [Klipper](https://www.klipper3d.org/)
-- Klipper uses a seperate mcu such as a raspberry pi to process and send commands to the micro controller
-- Configuration based on a printer.cfg file [(Config Examples)](https://github.com/Klipper3d/klipper/tree/master/config)
-- A seperate configuration in needed for the serial id of the micro controller in the moonraker.cfg file
-- Web based Interface
-- Can support multiple controllers 
-> [Kiauh](https://github.com/dw-0/kiauh) is useful tool to install this firmware)
+- Klipper uses a separate MCU, such as a Raspberry Pi, to process and send commands to the microcontroller
+- Configuration is based on a `printer.cfg` file [(Config Examples)](https://github.com/Klipper3d/klipper/tree/master/config)
+- A separate configuration is needed for the serial ID of the microcontroller in the `moonraker.cfg` file
+- Web-based interface
+- Can support multiple controllers  
+> [Kiauh](https://github.com/dw-0/kiauh) is a useful tool to install this

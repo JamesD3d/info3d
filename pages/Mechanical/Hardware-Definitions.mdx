@@ -1,23 +1,13 @@
 import { Callout } from 'nextra/components'
 
+# Overview: Hardware Definitions
 
-
-
-
-#  Overview Hardware Definitions 
-
-
-
-## Hotend Components Defined 
-
-
-
+## Hotend Components
 
 <details>
   <summary>Nozzle</summary> 
 
-- Responsible for Extruding molten Plastic onto a heated surface
-
+- Responsible for extruding molten plastic onto a heated surface.
 
 ![Nozzle.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/Nozzle.webp)
 
@@ -25,63 +15,54 @@ import { Callout } from 'nextra/components'
 
 <details>
   <summary>Nozzle Heating Element</summary>
-  A DC Curent powered heating element
+  A DC current-powered heating element.
 
-![carterage1.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/carterage1.webp)
+![cartridge1.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/cartridge1.webp)
 
-
-
-
-> Cartridge Style
-  
+> Cartridge style
 
 ![ceramic.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/ceramic.webp)
 
->  Ceramic Style 
+> Ceramic style
 
 </details>
 
 <details>
   <summary>Thermistor</summary>
-  - Reports the current temperature to the controller. Ensures that the nozzle is heating as expected.
+  - Reports the current temperature to the controller and ensures that the nozzle is heating as expected.
 
-![thermistor.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/termistor.webp)
+![thermistor.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/thermistor.webp)
 
 </details>
 
-
 <Callout type="warning">
-  **Thermal Runaway Protection**
-The thermistor is the most important safety equipment of an FFF 3D printer. All modern 3D printers have thermal runaway protections that will alert and shut down the printer. Thermal runaway occurs when a Nozzle continues to receive power without raising the temperature as expected.
+  **Thermal Runaway Protection**  
+  The thermistor is the most important safety component of an FFF 3D printer. All modern 3D printers have thermal runaway protection that will alert and shut down the printer. Thermal runaway occurs when a nozzle continues to receive power without raising the temperature as expected.
 </Callout>
-
-
-
 
 <details>
   <summary>Heatbreak</summary>
   - The heatbreak is the part of the nozzle where filament moves from a solid to molten plastic.
-  >  This is where the majority of extrusion issues occur. If the filament is heated too far past its transition point it can melt too far up the heatbreak resulting in a "Jam".
+  > This is where the majority of extrusion issues occur. If the filament is heated too far past its transition point, it can melt too far up the heatbreak, resulting in a "jam".
 
 ![heatbreak.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/heatbreak.webp)
 
 </details>
 
-
 <details>
   <summary>Heatsink</summary>
-  - An aluminum block meant to disperse heat and keep the filament solid until it reaches the melt zone
+  - An aluminum block meant to dissipate heat and keep the filament solid until it reaches the melt zone.
 
 ![heatsink.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/heatsink.webp)
 
-![heatsink2.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/heatsync2.webp)
+![heatsink2.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/heatsink2.webp)
 
 </details>
 
 <details>
   <summary>Hotend Cooling Fan</summary>
-  - Normally attached to the heatsink, removes heat before the "melt zone"
-  > This is very important to the extrusion system, if this fan stops or is obstructed the hotend will jam.
+  - Normally attached to the heatsink, removes heat before the "melt zone".
+  > This is very important to the extrusion system. If this fan stops or is obstructed, the hotend will jam.
 
 ![hotendfan.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/hotendfan.webp)
 
@@ -89,15 +70,15 @@ The thermistor is the most important safety equipment of an FFF 3D printer. All 
 
 <details>
   <summary>Part Cooling Fan</summary>
-  - This component transitions the molten plastic from a molten state to a solid state
-  > Some materials require 100% fan and others may warp. Some may even suffer poor layer adhesion. Fan speed is material specific.
+  - This component transitions the plastic from a molten state to a solid state.
+  > Some materials require 100% fan, while others may warp. Some may even suffer poor layer adhesion. Fan speed is material-specific.
 
 ![partcooling.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/partcooling.webp)
 </details>
 
 <details>
-  <summary>All-In-One Hotend</summary>
-  - All in one hotends have become a popular option with manufacturers. They come pre-assembled and are meant to be changed as a set of components.
+  <summary>All-in-One Hotend</summary>
+  - All-in-one hotends have become a popular option with manufacturers. They come pre-assembled and are meant to be changed as a set of components.
 
  ![nozzle2.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/nozzle2.webp)
 </details>
@@ -116,16 +97,15 @@ The thermistor is the most important safety equipment of an FFF 3D printer. All 
 | **IDEX (Dual Extruder)**  | - Clean dual-material prints <br /> - No nozzle drag or oozing <br /> - Duplication & mirror printing possible | - Expensive and complex <br /> - Tight nozzle alignment required <br /> - Reduced usable print width |
 | **Delta**                 | - Extremely fast and smooth motion <br /> - Lightweight printhead <br /> - Fixed bed, good for tall prints | - Very complex math & calibration <br /> - Less accurate at bed edges <br /> - Limited multi-material support |
 
-
 </details>
 
 ## Extrusion Systems
 
 <details>
   <summary>Extrusion Systems</summary>
-  The motion system responsible for moving the hard plastic filament from the spool to the hotend and pushing it through the nozzle to create the print.
+  The motion system is responsible for moving the hard plastic filament from the spool to the hotend and pushing it through the nozzle to create the print.
 ---
-This table compares common 3D printer extrusion systems including Bowden, Direct Drive, Dual Hotend (Shared Carriage), IDEX, Mixing Hotend, and Tool Changer.
+This table compares common 3D printer extrusion systems, including Bowden, Direct Drive, Dual Hotend (Shared Carriage), IDEX, Mixing Hotend, and Tool Changer.
 
 | Extrusion System | ✅ Pros | ❌ Cons |
 |------------------|--------|--------|
@@ -136,18 +116,15 @@ This table compares common 3D printer extrusion systems including Bowden, Direct
 | **Mixing Hotend (Cyclops/Diamond)** | - Multi-material/colors from one nozzle <br /> - Lightweight toolhead <br /> - Good for color blending | - Purge waste between transitions <br /> - Cross-contamination risks <br /> - Needs precise tuning for ratios |
 | **Tool Changer (e.g. E3D)** | - Swappable full tools (hotend, nozzle, type) <br /> - Clean transitions and modularity <br /> - Ideal for pro-grade multi-material jobs | - Mechanically complex <br /> - Costly and large <br /> - Requires advanced firmware/tool alignment |
 
-
-  
 </details>
-
 
 ## Heated Build Plates
 
 <details>
   <summary>Heated Plate Types</summary>
-  - Silicon Heater Pads - Typically DC heaters placed on the underside of an aluminum Plate  
-  - Bed Leveling Screws - Adjust the tramming of the Bed  
-  - Heatbed Thermistor - Like the hotend the heated bed thermistor ensures the bed is heating properly.
+  - Silicone heater pads – typically DC heaters placed on the underside of an aluminum plate  
+  - Bed leveling screws – adjust the tramming of the bed  
+  - Heatbed thermistor – like the hotend, the heated bed thermistor ensures the bed is heating properly.
 
   ![heated_plate_webp]()
 </details>
@@ -156,9 +133,9 @@ This table compares common 3D printer extrusion systems including Bowden, Direct
 
 <details>
   <summary>Surface Materials</summary>
-  - Glass - Tempered Glass often with a texture applied  
-  - PEI - Smooth and textured surface coating on a spring steel sheet  
-  - Garolite / G10 - Carbon fiber based surface
+  - Glass – tempered glass, often with a texture applied  
+  - PEI – smooth and textured surface coating on a spring steel sheet  
+  - Garolite / G10 – carbon fiber-based surface
 
   ![plate_materials_webp]()
 </details>
@@ -169,7 +146,7 @@ This table compares common 3D printer extrusion systems including Bowden, Direct
   <summary>Auto Bed Leveling Sensor Types</summary>
   - Inductive  
   - Microswitch  
-  - Force / Piezo Sensor
+  - Force / piezo sensor
 
   ![Auto Bed Leveling Sensor](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/Mechanical/Hardware-Definitions/auto_bed_leveling.webp)
 </details>

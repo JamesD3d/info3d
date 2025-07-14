@@ -1,18 +1,18 @@
 import { Callout } from  'nextra/components'
 
-# FDM 3D Printing Physical Limmitiations
+# FDM 3D Printing Physical Limitations
 
 <Callout type="info">
-As a general rule 3d Printed models only retain ~ 40% strength in the Z axis due to layer adheasion
+As a general rule, 3D printed models only retain ~40% strength in the Z axis due to layer adhesion.
 </Callout>
 
 ## Curved Surfaces on the Z axis aka "Salmon Skin"
 Causes: 
-- Just like slicing an apple and putting those slicecs back together. FDM printing builds objects by layering platic at set heights. Continuious curved surfaces are problimatic in the Z axis. 
+- Just like slicing an apple and putting those slices back together, FDM printing builds objects by layering plastic at set heights. Continuous curved surfaces are problematic in the Z axis.
 
 Solutions: 
-- Using Adaptive Layer Heights 
-- Chanfers not Fillets on bottom layers. 
+- Use Adaptive Layer Heights 
+- Chamfers, not Fillets, on bottom layers.
 
 EXAMPLE:
 
@@ -25,11 +25,11 @@ EXAMPLE:
 ## Overhangs 
 
 Cause: 
-- Gravity + Molten Plastic
+- Gravity + Molten Plastic = issues
 
 Solutions:
-- 3d Printer Supports (see section of supports)
-- Ensure the Modle has no overhang greater than 45 degrees 
+- 3D Printer Supports (see section of supports)
+- Ensure the Model has no overhang greater than 45 degrees
 
 EXAMPLE:
 
@@ -41,10 +41,10 @@ EXAMPLE:
 
 
 Cause:
-- Gravity, Model has a region that is floating. 
+- Gravity; Model has a region that is floating. 
 
-Soultin:
-- If THis is nessessary the only solution is to use supports. 
+Solution:
+- If this is necessary, the only solution is to use supports.
 
 ![gravity](public/issues/orca-slicer_ha22NGmQjn.gif)
 

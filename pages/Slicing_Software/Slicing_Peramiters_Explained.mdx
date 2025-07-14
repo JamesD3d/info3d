@@ -2,12 +2,12 @@ import { Callout } from 'nextra/components'
 
 # Slicing Parameters:
 
-Open source slicing software have built-in extensive documentatons. 
+Open source slicing software have built-in extensive  documentation. 
 Direct links to printing parameters documentation for the popular slicers 
 
-[Orca Slicer](https://github.com/SoftFever/OrcaSlicer/wiki/#process-settings)
+[Orca slicer](https://github.com/SoftFever/OrcaSlicer/wiki/#process-settings)
 
-[Prusa Slicer](https://help.prusa3d.com/category/print-settings_212)
+[PrusaSlicer](https://help.prusa3d.com/category/print-settings_212)
 
 ![SETTINGS.webp](https://cdn.jsdelivr.net/gh/JamesD3d/info3dimages@main/i/SLICERS/SETTINGS.webp)
 
@@ -23,17 +23,17 @@ D.James
 
 ## Quality
 ---
-- [ ]  Layer height: 0.2mm
+- [ ]  Layer height: 0.2 mm
 
-- [ ]  First Layer height 0.2mm
+- [ ]  First Layer height 0.2 mm
 
-### Line width
+### Line Width
 ---
-- In most cases I update these to 0.6mm this is 120% of the nozzle size and can reduce printtime and increase strength. 
+- In most cases I update these to 0.6 mm this is 120% of the nozzle size and can reduce print time and increase strength.
 
 -  [ ] For detail and text I leave the default settings.
 
-### Seam position
+### Seam Position
 ---
 - [ ] Aligned / Rear
 
@@ -77,29 +77,29 @@ Bridge counterbore holes
 - [ ] Alternate Extra Walls
 
 
-### Top/bottom shells
-- [ ] Top shelly layers: 5
+### Top/Bottom Shells
+- [ ] Top shell layers: 5
 
-- [ ] Top shell thickness: 0mm (
-> this dissables the thicknes limmet and uses he number of layers instead. 5 0.2mm layers = 1mm thick) 
+- [ ] Top shell thickness: 0 mm 
+> This dissables the thickness limmet and uses the number of layers instead. 5 0.2 mm layers = 1 mm thick
 
 - [ ] Top surface pattern: Monotonic Line
 > Depending on the model and desired top surface finish. These can be interesting to play with. 
 
 - [ ] Bottom surface pattern: Monotonic Line
 
-- [ ] Bottom shell thickness: 0mm
-> this dissables the thicknes limmet and uses he number of layers instead. 5 0.2mm layers = 1mm thick) 
+- [ ] Bottom shell thickness: 0 mm
+> This disables the thickness limit and uses the number of layers instead. 5 0.2 mm layers = 1 mm thick
 
 - [ ] Bottom surface pattern: Monotonic Line
 
 ### Infill 
 ---
 - [ ] Sparse infill density: 10%
-> again depending on desired strength. the majority of model strength is derived from the wall not the infill.
+> Again, depending on desired strength. the majority of model strength is derived from the wall not the infill.
 
 - [ ] Sparse infill pattern: Gyroid
-> Personal: use for most models, light weight and quick models use adaptive cubic.
+> Personal: use for most models. Lightweight and quick models use adaptive cubic.
 
 - [ ] Infill combination
 
@@ -108,11 +108,11 @@ Bridge counterbore holes
 <details>
   <summary>Supports</summary> 
 I avoid using supports as much as possible, however when I do I use the following settings. 
-The following is my thougth process:
+The following is my thougtht process:
 
 
 
-Identifiy the areas need for support
+Identify the areas needing support
 - is the area a direct line from the build plate?
 - is the area not in a direct line to the build plate?
 
@@ -125,7 +125,7 @@ If the model requires significant support, I refer tree supports.
 
 <Callout type="CAUTION">
 
-If you attempt to use PETG with PLA Supports, the PLA may [JAM](/Troubleshooting) your hotend.
+If you attempt to use PETG with PLA supports, the PLA may [JAM](/Troubleshooting) your hotend.
 
 </Callout>
 
@@ -138,12 +138,12 @@ If you attempt to use PETG with PLA Supports, the PLA may [JAM](/Troubleshooting
 ### Others 
 ---
 - [ ] Brim type: Mouse ear (if needed)
-> this places small tabs on sections of a print that may lif due to internal tension. These are very easy to remove. 
+> This places small tabs on sections of a print that may lift due to internal tension. These are very easy to remove.
 
 
-- [ ] Verbose Gcode
+- [ ] Verbose G-code
 
 - [ ] Label objects
 
 - [ ] Exclude objects
-> if the printer supports the feature. During the print of multiplul models , this feature allows you to skip a model that failed and continue printing the other without loosing progress. 
+> if the printer supports the feature, during the print of multiple models, this feature allows you to skip a model that failed and continue printing the other without losing progress.
